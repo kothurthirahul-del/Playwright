@@ -13,9 +13,9 @@ test('Mock500 test', async ({ page }) => {
         }
     );
 
-    const response = await request.get(
-    'https://jsonplaceholder.typicode.com/users/1'
-);
+    const response = await page.goto(
+        'https://jsonplaceholder.typicode.com/users/1'
+    );
 
     expect(response.status()).toBe(500);
 });

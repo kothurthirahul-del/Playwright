@@ -38,7 +38,7 @@ export default defineConfig({
 
     {
       name:'setup',
-      testMatch:'/.*auth\.setup\.spec\.js/,'
+      testMatch: /.*auth\.setup\.spec\.js/,
     },
     {
       name: 'chromium',

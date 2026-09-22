@@ -8,5 +8,5 @@ test("Verify Application Link", async function({page}){
 
     console.log("Title is "+url)
     
-    await expect(page).toHaveTitle("Goo")
+    await expect(page).toHaveTitle(/Google/)
 })
