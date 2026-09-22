@@ -45,7 +45,7 @@ export default defineConfig({
        testIgnore: /.*auth\.setup\.spec\.js/,
 
       use: { ...devices['Desktop Chrome'],
-        headless: false,
+        headless: true,
         viewport:{width:1366 ,height:768},
         screenshot:"on",
         video:"on",
